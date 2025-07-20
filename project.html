@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream Pulse</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      min-height: 100vh;
+      gap: 0px;
+      background-color:#f2f2f2
+    }
+
+    aside {
+      width: 23%;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      position: fixed;
+      height: 100vh;
+      padding: 30px;
+    }
+
+    aside h1 {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+
+    aside nav ul {
+      list-style: none;
+    }
+
+    aside nav ul li {
+      margin: 15px 0;
+    }
+
+    aside nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    aside .social {
+      margin-top: 30px;
+    }
+
+    aside .social a {
+      color: white;
+      margin-right: 10px;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    main {
+      margin-left: 23%;
+      width: 80%;
+      color: #333;
+    }
+
+    .intro {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 40px;
+      height: 400px;
+       background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c');
+      background-size: cover;
+      color: #0c0c0c;
+      font-size: 20px;
+      flex-direction: column;
+     text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .overlay-box {
+      background: rgba(0, 102, 2204, 0.7);
+      color: white;
+      padding: 20px;
+      max-width: 700px;
+      border-radius: 10px;
+    }
+    .overlay-box h2 {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .section {
+      background: #f2f2f2;
+      padding: 60px 40px;
+      
+    }
+
+    .flex-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .card {
+      flex: 1;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .card i {
+      font-size: 40px;
+      color: #1d72b8;
+    }
+
+    .work-gallery {
+      display: flex;
+      gap: 40px;
+      overflow-x: auto;
+    }
+
+    .work-gallery img {
+      width: 150px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      border-width: 20px;
+    }
+
+    .clients {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-top: 20px;
+    }
+
+    .clients img {
+      height: 50px;
+      width: 130px;
+      background: white;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .contact-section {
+      display: flex;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .contact-section .card,
+    .contact-section form {
+      flex: 1;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    form button {
+      padding: 10px 20px;
+      background: #1d72b8;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+
+<body>
+  <aside>
+    <h1>DREAM PULSE</h1>
+    <nav>
+      <ul>
+        <li><a href="#intro">INTRO</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#work">WORK</a></li>
+        <li><a href="#clients">CLIENTS</a></li>
+        <li><a href="#talk">LET'S TALK</a></li>
+      </ul>
+    </nav>
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p style="margin-top: 30px; font-size: 14px;">Copyright 2020 Dream Pulse<br>Design: Template Mo</p>
+  </aside>
+
+  <main>
+    <div id="intro">
+    <section class="intro">
+      <div class="overlay-box">
+      <h2>INTRODUCING DREAM PULSE</h2>
+      <p>This box alpha 30 percent. Left sidebar is a sticky element. Right side contents are scrolling up and down. This background has a parallax effect.</p>
+      <p>Dream Pulse is a Bootstrap 4.3.1 template designed for your websites. You can modify this layout as you like.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="flex-row">
+        <div class="card">
+          <i class="fas fa-balance-scale"></i>
+          <h3 id="about">About Us</h3>
+          <p>When first section is scrolled up, BG image will be disappeared with a parallax effect. Donec ac tempor tellus.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-building"></i>
+          <h3>Company Profile</h3>
+          <p>You can use this template for your commercial websites or for your clients.</p>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3 id="work">Our Work</h3>
+      <div class="work-gallery">
+        <img src="https://picsum.photos/id/1025/150/200" alt="Dog">
+        <img src="https://picsum.photos/id/1011/150/200" alt="Woman">
+        <img src="https://picsum.photos/id/1035/150/200" alt="Flowers">
+        <img src="https://picsum.photos/id/1012/150/200" alt="Model">
+      </div>
+    </section>
+
+    <section class="section">
+      <h3 id="clients">Our Clients</h3>
+      <p>Aenean est augue, iaculis ut arcu a, cursus tempus eros.</p>
+      <div class="clients">
+        <img src="./Downloads/new/client-1.png" alt="MYOB">
+        <img src="./Downloads/new/client-2.png" alt="BELIMO">
+        <img src="./Downloads/new/client-3.png" alt="LifeGroups">
+        <img src="./Downloads/new/client-4.png" alt="Lilly">
+        <img src="./Downloads/new/client-5.png" alt="Citrus">
+        <img src="./Downloads/new/client-6.png" alt="Trustly">
+        <img src="./Downloads/new/client-7.png" alt="Oldendorff">
+        <img src="./Downloads/new/client-8.png" alt="Grabyo">
+      </div>
+    </section>
+
+    <section class="section contact-section">
+      <div class="card">
+        <h3 id="talk">Talk to Us</h3>
+        <p>Sed aliquet, nibh ac hendrerit faucibus, tellus metus viverra tellus, vel volutpat purus orci ac ex.</p>
+        <p>120-240 Orci varius natoque penatibus, parturient montes, 10660 nasvetuer ridiculus mus</p>
+      </div>
+      <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Message..."></textarea>
+        <button type="submit">SEND</button>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
